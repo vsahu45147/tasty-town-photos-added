@@ -1,0 +1,39 @@
+server:
+  port: 1200
+  servlet:
+    context-path: "/tasty-town"
+
+spring:
+  application:
+    name: Tasty Town Backend
+
+  datasource:
+    url: jdbc:postgresql://localhost/tasty-town
+    username: postgres
+    password: viswa123klr
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+#ROOT LEVEL LOGGING
+logging:
+  level:
+    root: INFO
+
+
+upload:
+  image:
+    path: images
+
+JWT:
+  SECRET: a6ae1ee1d65eabc9a7c37f23afc4d0a4db43e04a561a99e202e0addf01fb27bb
+
+DEFAULT:
+  ADMIN:
+    EMAIL: "admin@gmail.com"
+    PASS: "admin"
